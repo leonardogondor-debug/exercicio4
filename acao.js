@@ -7,8 +7,14 @@ const tabela = [
 ]
 
 const obterelemento = (id) => document.getElementById(id);
-const obtervalor = () => document.getElementById(valor);
-const obtercategoria = () => document.getElementById("descricao").Value;
+const obtervalor = () => obterelemento(valor).value;
+const obtercategoriainformada = () => obterelemento("categoria").Value;
+const obtercategoria = (tabela, nomeCategoria) => tabela.find((item) => item[0] === nomeCategoria);
 const valornegativo = (valor) => valor < 0;
 const valortotal = (total,valor) => total + valor;
+
+const atualizartabela = (categoris, valor) => Categoria[1] = somavalor(categoria[1], valor);
+const atualizarsistema = () => {
+    
+}
 
